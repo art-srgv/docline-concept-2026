@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docline — Desk & Akte · Concept</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23ffffff'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='%23000000'/%3E%3C/svg%3E">
+<meta name="description" content="Docline Desk &amp; Akte — a concept by Brimmo for the Austrian GP practice: the Desk (Screen 1) and the Akte (Screen 2).">
+<script>
+/* One light theme. Every link into the prototype carries ?fresh, so each scene opens clean; the hub only mirrors the
+   prototype's "Bewegung reduzieren" setting. */
+(function () {
+  var s = {}; try { var sk = Object.keys(localStorage).filter(function (k) { return /^docline\.[^.]+\.settings$/.test(k); })[0]; s = (sk && JSON.parse(localStorage.getItem(sk))) || {}; } catch (e) {}
+  var h = document.documentElement; h.dataset.theme = 'day';
+  /* reveals start hidden only while JS is healthy: an uncaught error, or hub.js not booting, shows everything */
+  h.classList.add('js'); var unhide = function () { h.classList.remove('js'); };
+  window.addEventListener('error', unhide); setTimeout(function () { if (!window.DoclineHub) unhide(); }, 3000);
+  if (s.reduceMotion || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) h.classList.add('reduce');
+})();
+</script>
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/ui.css">
+<link rel="stylesheet" href="hub.css">
+</head>
+<body class="hub">
+<div class="hb-bg" aria-hidden="true"></div>
+<div class="hb-scrim" aria-hidden="true"></div>
+
+<header class="hb-top" role="banner">
+  <div class="hb-brand">
+    <a class="hb-word" href="#top" aria-label="Docline — back to top">D<span class="hb-o" aria-hidden="true"></span>cline</a>
+    <span class="hb-sep"></span>
+    <span class="hb-ctx">Desk &amp; Akte<span class="dot">·</span>Concept</span>
+  </div>
+  <nav class="hb-nav" aria-label="Sections">
+    <a href="#thesis">Thesis</a>
+    <a href="#before-after">Before → After</a>
+    <a href="#autonomy">Autonomy</a>
+    <a href="#glass">Legibility</a>
+    <a href="#austria" class="opt">Austria</a>
+    <a href="#lanes" class="opt">Lanes</a>
+    <a href="#metrics" class="opt">Metrics</a>
+    <a href="#appendix">Appendix</a>
+  </nav>
+  <div class="hb-right">
+    <a class="hb-open" data-link="desk.html" data-hash="" title="Open the Desk (Screen 1)">Desk<span class="kb" aria-hidden="true">1</span></a>
+    <a class="hb-open" data-link="akte.html" data-hash="post" title="Open the Akte (Screen 2)">Akte<span class="kb" aria-hidden="true">2</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 00 · Cover -->
+  <section class="cv" aria-labelledby="cv-title">
+    <p class="cv-eyebrow rv">Concept by Brimmo <i class="opt"></i> <span class="opt">Screen 1 &amp; Screen 2</span> <i></i> <span data-when></span></p>
+    <h1 id="cv-title" class="rv" style="--i:1" aria-label="Docline — Desk &amp; Akte"><span class="wm" aria-hidden="true">D<span class="o"></span>cline</span> <span class="lt" aria-hidden="true">Desk &amp; Akte</span></h1>
+    <p class="cv-sub rv" style="--i:2">A calm, voice-first workspace for the Austrian GP practice.</p>
+    <div class="cv-actions rv" style="--i:3">
+      <a class="btn btn-primary btn-xl" data-link="desk.html" data-hash="" data-open="1">Open Desk <span class="t">Screen 1</span> <span class="kb" aria-hidden="true">1</span></a>
+      <a class="btn btn-secondary btn-xl" data-link="akte.html" data-hash="post" data-open="2">Open Akte <span class="t">Screen 2</span> <span class="kb" aria-hidden="true">2</span></a>
+    </div>
+    <div class="rv" style="--i:4"><ul class="cv-how" data-how aria-label="How to use the prototype"></ul></div>
+    <p class="cv-meta rv" style="--i:5">Designed for 1600 × 900 · checked from 1440 to 1920 · Chrome or Safari · every patient and value is fictional</p>
+    <figure class="cv-stage rv" style="--i:6">
+      <div class="cv-frame" data-hero><div class="plate"></div></div>
+      <figcaption class="cv-cap"><b>Desk, scene P</b><span class="dot">·</span>09:45, before the next patient walks in</figcaption>
+    </figure>
+  </section>
+
+  <!-- 01 · Thesis -->
+  <section class="sec" id="thesis" aria-labelledby="thesis-h">
+    <div class="wrap">
+      <div class="eyebrow-row rv"><span class="n">01</span>Thesis<span class="rule"></span></div>
+      <h2 id="thesis-h" class="th-quote rv" style="--i:1">A calm desk that has already done the reading <span class="t3">— and never does more than the doctor can see, undo or sign.</span></h2>
+      <div class="verbs" data-verbs></div>
+    </div>
+  </section>
+
+  <!-- 02 · Before → After -->
+  <section class="sec" id="before-after" aria-labelledby="ba-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow-row rv"><span class="n">02</span>Before → After<span class="rule"></span></div>
+        <h2 id="ba-h" class="h-sec rv" style="--i:1">Two screens, one design language. <span class="t3">Every decision opens in the live prototype.</span></h2>
+      </div>
+    </div>
+    <div class="wrap wide">
+      <div data-ba="desk"></div>
+      <div data-flow></div>
+      <div data-ba="akte"></div>
+    </div>
+  </section>
+
+  <!-- 03 · Autonomy -->
+  <section class="sec" id="autonomy" aria-labelledby="au-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow-row rv"><span class="n">03</span>Autonomy policy<span class="rule"></span></div>
+        <h2 id="au-h" class="h-sec rv" style="--i:1">Autonomy by consequence. <span class="t3">Same action, different trigger, different autonomy.</span></h2>
+      </div>
+      <div data-autonomy></div>
+    </div>
+  </section>
+
+  <!-- 04 · Material & contrast -->
+  <section class="sec" id="glass" aria-labelledby="gl-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow-row rv"><span class="n">04</span>Legibility &amp; contrast<span class="rule"></span></div>
+        <h2 id="gl-h" class="h-sec rv" style="--i:1">One layer of glass on a pastel field. <span class="t3">Legible by rule, measured on the darkest backdrop.</span></h2>
+      </div>
+      <div data-glass-sec></div>
+    </div>
+  </section>
+
+  <!-- 05 · Austria -->
+  <section class="sec" id="austria" aria-labelledby="at-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow-row rv"><span class="n">05</span>Austrian details<span class="rule"></span></div>
+        <h2 id="at-h" class="h-sec rv" style="--i:1">Austrian details we got right. <span class="t3">What a Kassenpraxis checks first.</span></h2>
+      </div>
+      <div class="au-grid" data-austria></div>
+    </div>
+  </section>
+
+  <!-- 06 · Regulatory lanes -->
+  <section class="sec" id="lanes" aria-labelledby="ln-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow-row rv"><span class="n">06</span>Regulatory lanes<span class="rule"></span></div>
+        <h2 id="ln-h" class="h-sec rv" style="--i:1">Two lanes, one line we never blur.<br><span class="t3">Drafting is not deciding.</span></h2>
+      </div>
+      <div data-lanes></div>
+    </div>
+  </section>
+
+  <!-- 07 · Metrics -->
+  <section class="sec" id="metrics" aria-labelledby="mx-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow-row rv"><span class="n">07</span>Hypotheses &amp; metrics<span class="rule"></span></div>
+        <h2 id="mx-h" class="h-sec rv" style="--i:1">What we would test with five practices. <span class="t3">And what would prove us wrong.</span></h2>
+      </div>
+      <div data-metrics></div>
+    </div>
+  </section>
+
+  <!-- 08 · Appendix -->
+  <section class="sec" id="appendix" aria-labelledby="ap-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow-row rv"><span class="n">08</span>Appendix<span class="rule"></span></div>
+        <h2 id="ap-h" class="h-sec rv" style="--i:1">The homework. <span class="t3">Open what you need.</span></h2>
+      </div>
+      <div class="acc rv" data-appendix></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="credit">Concept by Brimmo</p>
+        <p class="fine" data-fine></p>
+      </div>
+      <div class="foot-actions">
+        <a class="lnk" data-link="desk.html" data-hash="">Open Desk <code>desk.html</code></a>
+        <a class="lnk" data-link="akte.html" data-hash="post">Open Akte <code>akte.html</code></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="tip" role="tooltip" data-tip></div>
+<dialog class="lb" data-lb aria-label="Prototype frame"><button type="button" class="lb-x" data-lb-x aria-label="Close">×</button><img alt="" data-lb-img><p class="lb-cap" data-lb-cap></p></dialog>
+
+<script src="assets/data.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/ui.js"></script>
+<script src="hub-shots.js"></script>
+<script src="hub.js"></script>
+</body>
+</html>

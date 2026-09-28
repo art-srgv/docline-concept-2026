@@ -1,0 +1,1 @@
+window.DOCLINE_SHOTS = ["frame-akte-post-befund.png","frame-akte-post-korr.png","frame-akte-post.png","frame-akte-pre-rez.png","frame-akte-pre.png","frame-desk-C.png","frame-desk-F.png","frame-desk-K0.png","frame-desk-K1.png","frame-desk-P.png"];
